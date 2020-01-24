@@ -78,13 +78,13 @@ if (validateAndSave())
   {
 if (formType == FormType.login)
 {
-  String userID = await widget.auth.SignIn(email, password);
+  String userID = await widget.auth.signIn(email, password);
   print("user ID is :"+ userID);
 
 
 }
 else{
- String userID = await widget.auth.SignUp(email, password);
+ String userID = await widget.auth.signUp(email, password);
   print("register user ID is :"+ userID);
 
 }

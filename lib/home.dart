@@ -26,7 +26,7 @@ class home extends StatefulWidget
     void logout() async
     {
       try{
-        await widget.auth.SignOut();
+        await widget.auth.signOut();
         widget.onSignedOut();
       }
       catch(e)
